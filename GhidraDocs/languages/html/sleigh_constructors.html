@@ -233,7 +233,7 @@ no such requirement.
 <a name="sleigh_caret"></a>7.3.2. The '^' character</h4></div></div></div>
 <p>
 The ‘^’ character in the display section is used to concatenate
-identifiers and literal characters where there shouldn’t be white space
+identifiers and character literals without inserting additional whitespace
 in the disassembly display. This can be used in any manner but is
 usually used to attach display characters from a local symbol to the
 literal characters of the mnemonic.
@@ -247,8 +247,8 @@ literal characters of the mnemonic.
 In the above example, “bra” is treated as literal characters in the
 resulting display string followed immediately, with no intervening
 spaces, by the display string of the local
-symbol <span class="emphasis"><em>cc</em></span> (resulting in an output like braeq or brane). Thus, even though it is attached to the literal bra, the whole constructor actually
-has three operands, denoted by the three
+symbol <span class="emphasis"><em>cc</em></span> (resulting in an output like braeq or brane). Thus, even though <emphasis>cc</emphasis> is attached to the initial part of the mnemonic "bra",
+the whole constructor actually has three operands, denoted by the three
 identifiers <span class="emphasis"><em>cc</em></span>, <span class="emphasis"><em>op1</em></span>,
 and <span class="emphasis"><em>op2</em></span>.
 </p>
